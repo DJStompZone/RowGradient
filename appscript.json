@@ -6,7 +6,7 @@
   "addOns": {
     "common": {
       "name": "RowGradient",
-      "logoUrl": "https://github.com/djstompzone/RowGradient/logo.png",
+      "logoUrl": "https://raw.githubusercontent.com/DJStompZone/RowGradient/refs/heads/main/logo.png",
       "homepageTrigger": {
         "runFunction": "onOpen",
         "enabled": true
