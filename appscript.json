@@ -1,0 +1,22 @@
+{
+  "timeZone": "America/Chicago",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "addOns": {
+    "common": {
+      "name": "RowGradient",
+      "logoUrl": "https://github.com/djstompzone/RowGradient/logo.png",
+      "homepageTrigger": {
+        "runFunction": "onOpen",
+        "enabled": true
+      }
+    },
+    "sheets": {
+      "homepageTrigger": {
+        "runFunction": "onOpen",
+        "enabled": true
+      }
+    }
+  }
+}

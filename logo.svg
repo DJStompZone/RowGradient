@@ -1,0 +1,49 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 128 128"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">RowGradient Logo</title>
+  <desc id="desc">RowGradient Logo. ©2025 DJ Woodward-Magar, All Rights Reserved</desc>
+
+  <defs>
+    <linearGradient id="gyr" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00c853" />
+      <stop offset="50%" stop-color="#ffd600" />
+      <stop offset="100%" stop-color="#ff1744" />
+    </linearGradient>
+  </defs>
+
+  <rect id="svg-rainbow-tile" x="8" y="8" width="112" height="112" rx="24" fill="url(#gyr)" />
+
+<rect id="svg-document-shadow" x="26" y="22" width="76" height="90" rx="12" fill="rgba(0,0,0,0.14)"/>
+<rect id="svg-document-page" x="24" y="20" width="76" height="90" rx="12" fill="#ffffff" stroke="#e5e7ebaa" stroke-width="2" stroke-linecap="round"/>
+
+  <!--<rect x="24" y="20" width="76" height="90" rx="12" fill="#ffffff" stroke="#e5e7eb99" stroke-width="1.8" stroke-linecap="round" /> --><!--is this a duplicate? -->
+
+<path id="svg-document-header" d="M 36,20 L 88,20 A 12,12 0 0 1 100,32 L 100,40 L 24,40 L 24,32 A 12,12 0 0 1 36,20 Z" fill="#f3f4f655" />
+  <rect id="svg-document-fake-title" x="33" y="25" width="48" height="6" rx="6" fill="#d1d5db99" />
+  <rect id="svg-document-fake-subtitle" x="33" y="33" width="26" height="4" rx="4" fill="#d1d5db99" />
+
+  <path id="svg-grid-vertical" d="M50 40 V105 M78 40 V105" stroke="#e5e7ebaa" stroke-width="2" stroke-linecap="round" />
+  <path id="svg-grid-horizontal"
+    d="M31 40 H93
+       M31 52 H93
+       M31 64 H93
+       M31 76 H93
+       M31 88 H93
+       M31 100 H93"
+    stroke="#d5d7db99"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <rect id="svg-color-row-bg" x="30" y="22" width="64" height="84" rx="6" fill="rgba(0,0,0,0.04)" stroke="#e5e7ebbf" stroke-width="2" stroke-linecap="round"/>
+
+  <rect class="color-row grid-row" id="svg-color-row1" x="30.5" y="41" width="63" height="10" rx="0.5" fill="hsla(120, 100%, 40%, 0.25)" />
+  <rect class="color-row grid-row" id="svg-color-row2" x="30.5" y="53" width="63" height="10" rx="0.5" fill="hsla(90, 100%, 60%, 0.25)" />
+  <rect class="color-row grid-row" id="svg-color-row3" x="30.5" y="65" width="63" height="10" rx="0.5" fill="hsla(50, 100%, 60%, 0.25)"/>
+  <rect class="color-row grid-row" id="svg-color-row4" x="30.5" y="77" width="63" height="10" rx="0.5" fill="hsla(30, 100%, 60%, 0.25)"/>
+  <rect class="color-row grid-row" id="svg-color-row5" x="30.5" y="89" width="63" height="10" rx="0.5" fill="hsla(0, 100%, 60%, 0.25)"/>
+</svg>

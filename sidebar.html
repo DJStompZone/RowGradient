@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <base target="_top">
+        <style>
+          body { font-family: sans-serif; margin: 10px; }
+          input, select, button { width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box; }
+          label { display: block; margin-bottom: 5px; font-weight: bold; }
+        </style>
+      </head>
+      <body>
+        <h2>Color Scale Settings</h2>
+        <label for="columnInput">Column to base gradient on (e.g., B):</label>
+        <input type="text" id="columnInput" value="B">
+
+        <label for="minColor">Min Value Color:</label>
+        <input type="color" id="minColor" value="#FF0000"> <!-- Red -->
+
+        <label for="maxColor">Max Value Color:</label>
+        <input type="color" id="maxColor" value="#00FF00"> <!-- Green -->
+
+        <button onclick="google.script.run.applyColorScale(
+          document.getElementById('columnInput').value,
+          document.getElementById('minColor').value,
+          document.getElementById('maxColor').value
+        )">Apply Color Scale</button>
+
+        <div id="status"></div>
+
+        <script>
+          // Client-side JavaScript to handle responses from Apps Script
+          function showStatus(message) {
+            document.getElementById('status').innerText = message;
+          }
+
+          // Handle success/failure from the server-side function
+          google.script.run
+            .withSuccessHandler(showStatus)
+            .withFailureHandler(showStatus)
+            .applyColorScale(); // This initial call is just to set up handlers, actual call is on button click
+        </script>
+      </body>
+    </html>
